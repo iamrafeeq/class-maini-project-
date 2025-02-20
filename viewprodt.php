@@ -45,7 +45,7 @@ if(isset($_GET['id'])){
     $del=$_GET['id'];
     $q=mysqli_query($codes,"DELETE FROM `prodtform` WHERE prodtid=$del");
     if($q){
-        echo "<script>alert('record deleted')
+        echo "<script>alert('record deleted now ')
         location.assign('viewprodt.php')</script>";
     }
 }
