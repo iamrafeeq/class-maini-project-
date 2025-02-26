@@ -1,8 +1,8 @@
 <?php
-
-session_start();
-//session_unset();
 include('connection.php');
+session_start();
+// session_unset();
+
 
 
 ?>

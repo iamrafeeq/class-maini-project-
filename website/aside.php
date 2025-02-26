@@ -1,3 +1,8 @@
+<?php
+include('quirry.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,8 +121,34 @@
 							<i class="zmdi zmdi-search"></i>
 						</div>
 
-						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="2">
+						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="  
+						
+<?php
+$count = 0;
+if (isset($_SESSION['cart'])) {
+	$count = count($_SESSION['cart']);
+
+	# code...
+}
+
+echo $count;
+
+?>
+
+
+
+
+						
+						
+						
+						
+						">
+
+
 							<i class="zmdi zmdi-shopping-cart"></i>
+
+
+
 						</div>
 
 						<a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
@@ -248,7 +279,7 @@
 		<div class="header-cart flex-col-l p-l-65 p-r-25">
 			<div class="header-cart-title flex-w flex-sb-m p-b-8">
 				<span class="mtext-103 cl2">
-					Your Cart
+					
 				</span>
 
 				<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">

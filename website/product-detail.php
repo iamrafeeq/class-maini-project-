@@ -1,6 +1,6 @@
 <?php
-include('quirry.php');
-include('pro_datail.php');
+include('connection.php');
+include('aside.php');
 
 
 
